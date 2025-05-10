@@ -1,7 +1,7 @@
 function calculate(x) {
-    const num1 = parseFloat(document.querySelector('num1').value);
-    const num2 = parseFloat(document.querySelector('num2').value);
-    const num3 = parseFloat(document.querySelector('num3').value);
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const num3 = parseFloat(document.getElementById('num3').value);
     let result;
 
     switch (x) {
@@ -33,7 +33,7 @@ function calculate(x) {
             result = ' no válido ';
     }
 
-    document.querySelector('result').value = result;
+    document.getElementById('result').value = result;
 }
 
 
@@ -65,4 +65,3 @@ const calcularFactorial = function (n) {
     if (n === 0 || n === 1) return 1;
     return n * calcularFactorial(n - 1);
 };
-document.querySelector("#resultado").value = result;
